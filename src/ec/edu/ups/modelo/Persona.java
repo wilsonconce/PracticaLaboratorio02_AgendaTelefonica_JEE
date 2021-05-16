@@ -2,19 +2,20 @@ package ec.edu.ups.modelo;
 
 import java.io.Serializable;
 
-public class Usuario implements Serializable{
-	
-	String cedula;
-	String nombre;
-	String apellido;
-	String correo;
-	String contrasena;
-	
-	public Usuario() {
+public class Persona implements Serializable {
+
+	private static final long serialVersionUID = 1L;
+	private String cedula;
+	private String nombre;
+	private String apellido;
+	private String correo;
+	private String contrasena;
+
+	public Persona() {
 		// TODO Auto-generated constructor stub
 	}
 
-	public Usuario(String cedula, String nombre, String apellido, String correo, String contrasena) {
+	public Persona(String cedula, String nombre, String apellido, String correo, String contrasena) {
 		super();
 		this.cedula = cedula;
 		this.nombre = nombre;
@@ -62,6 +63,5 @@ public class Usuario implements Serializable{
 	public void setContrasena(String contrasena) {
 		this.contrasena = contrasena;
 	}
-	
-	
+
 }
